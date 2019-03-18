@@ -1,10 +1,17 @@
 package Lesson_2;
 
-import Lesson_2.util.UtilImpl;
-
 public class Main {
     public static void main(String[] args) {
-        UtilImpl util = new UtilImpl();
-        util.reverseTree();
+        Calculation calculation = new Calculation(25, 30);
+        calculation.sum();
+        System.out.println(calculation.sumReturn());
+        calculation.div();
+        System.out.println(calculation.divReturn());
+        calculation.multiply();
+        System.out.println(calculation.multiplyReturn());
+        calculation.share();
+        System.out.println(calculation.shareReturn());
+        calculation.aliquot();
+        System.out.println(calculation.aliquotReturn());
     }
 }
