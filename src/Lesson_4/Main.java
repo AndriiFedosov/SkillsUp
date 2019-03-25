@@ -20,7 +20,13 @@ public class Main {
 //        waska.setMale(true);
 //        System.out.println(waska.toString());
         Util util = new Util();
+        Cat cat = new Cat();
+        System.out.println(isInteger(cat));
 
-        System.out.println(util.plusTwo(util.multiply(util.div(5, 2))));
+
+    }
+
+    private static boolean isInteger(Object object) {
+        return object instanceof Cat;
     }
 }
