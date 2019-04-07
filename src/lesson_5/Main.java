@@ -24,6 +24,7 @@ public class Main {
         car = passager3.sitInCar(car, passager3);
         System.out.println(car.toString());
 
+
     }
 
 }

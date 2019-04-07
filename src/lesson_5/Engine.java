@@ -10,7 +10,6 @@ public class Engine {
         this.speed = speed;
         this.horsePower = horsePower;
     }
-
     public int getSpeed() {
         return speed;
     }
