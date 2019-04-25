@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 //        List<Integer> ints = new ArrayList<>();
 //        for (int index = 0; index < 10; index++) {
 //            ints.add((int) (Math.random() * 10));
@@ -33,7 +33,7 @@ public class Main {
 
         personList2.forEach(System.out::println);
 
-        boolean filteredPersons = personList2
+        List<Person> filteredPersons = personList2
                 .stream()
                 .filter(person -> person.getAge() > 20)
                 .sorted(Comparator.comparing(Person::getAge))
@@ -45,12 +45,13 @@ public class Main {
                     person.setAge(person.getAge()+1);
                     person.setName(person.getName()+" modifired ");
                 })
-                .allMatch(person -> person.getName().contains("2"));
+                .collect(Collectors.toList());
 
         System.out.println("List was filtered by age");
         System.out.println(filteredPersons);
 //        filteredPersons.forEach(System.out::println);
-
+        Optional<Person> person = filteredPersons.stream().filter(item -> item.getAge()==20)
+                .findFirst();
 
 
 
