@@ -77,9 +77,15 @@ public class Main {
 
         rada.put("koalition", koalition);
         rada.put("oposition", oposition);
-
+        rada.forEach((key,value) -> {System.out.print("key :" +key);
+            System.out.println("value = " + value);
+        });
         util.takeBribe(rada, deputy1.getName());
-
-        System.out.println(rada);
+        Map<String,Partia> radaWithBribers = util.getBribeToAllDeputy(rada);
+        radaWithBribers = util.removePartyIfAllAreBibeTakers(radaWithBribers);
+        System.out.println("-----------------------");
+        radaWithBribers.forEach((key,value) -> {System.out.print("key :" +key);
+            System.out.println("value = " + value);
+        });
     }
 }
