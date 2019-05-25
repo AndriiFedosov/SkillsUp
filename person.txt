@@ -1,4 +1,2 @@
-First Name: Andry, Last Name: Fedosov, Age: 25, Height: 1.78, Married: false, Birth day: 1993-07-05, 
-First Name: Sasha, Last Name: Arbusov, Age: 27, Height: 1.55, Married: true, Birth day: 1992-07-05, 
-First Name: Tania, Last Name: Yablunewa, Age: 21, Height: 1.85, Married: false, Birth day: 1991-07-05, 
-First Name: Nikolay, Last Name: Krivoy, Age: 23, Height: 1.98, Married: true, Birth day: 1994-07-05, 
+First Name: Andry, Last Name: Fedosov, Age: 25, Height: 1.78, Married: false, Birth day: 1993-07-05, First Name: Sasha, Last Name: Arbusov, Age: 27, Height: 1.55, Married: true, Birth day: 1992-07-05, First Name: Tania, Last Name: Yablunewa, Age: 21, Height: 1.85, Married: false, Birth day: 1991-07-05, First Name: Nikolay, Last Name: Krivoy, Age: 23, Height: 1.98, Married: true, Birth day: 1994-07-05,
+\n

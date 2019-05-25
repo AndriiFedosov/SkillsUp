@@ -76,7 +76,5 @@ public class Main {
         System.out.println(dataInputStream.readDouble());
         System.out.println(dataInputStream.readBoolean());
         System.out.println(dataInputStream.readUTF());
-
-
     }
 }
